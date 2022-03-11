@@ -7,6 +7,10 @@ public class Main {
         Shirts alabama = new Shirts("Alabama", "black");
         Person ihsan = new Person("Ihsan", alabama, gucci);
 
-        System.out.println(ihsan.getShirts().getBrands());
+        Room mainRoom = new Room(new Sofa("International", "Kubics", "ASUS"), "blue");
+
+        System.out.println(mainRoom.getSofaManufacturer());
+
+//        System.out.println(ihsan.getShirts().getBrands());
     }
 }
