@@ -1,5 +1,59 @@
 package com.ihsan;
 
+class Jeep extends Car {
+
+    public Jeep(String series, int cylinder) {
+        super(series, cylinder);
+    }
+
+    @Override
+    public void startEngine() {
+        super.startEngine();
+        System.out.println("Jeep Beast Engine STARTED");
+    }
+
+    @Override
+    public void accelerate() {
+        System.out.println("Beast Started");
+    }
+}
+
+class Porsche extends Car {
+    public Porsche(String series, int cylinder) {
+        super(series, cylinder);
+    }
+
+    @Override
+    public void startEngine() {
+        super.startEngine();
+        System.out.println("BADASS Engine Started");
+    }
+
+    @Override
+    public void accelerate() {
+        super.accelerate();
+        System.out.println("BADASS Engine go with 30km/h");
+    }
+}
+
+class Bentley extends Car {
+    public Bentley(String series, int cylinder) {
+        super(series, cylinder);
+    }
+
+    @Override
+    public void startEngine() {
+        super.startEngine();
+        System.out.println("Elegant Engine Started");
+    }
+
+    @Override
+    public void accelerate() {
+        super.accelerate();
+        System.out.println("Elegant Engine move slowly but sure");
+    }
+}
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,11 +67,19 @@ public class Main {
 
         Printer myPrinter = new Printer(100, "My Printer");
 
-        System.out.println(myPrinter.getTonerLevel());
-        myPrinter.setPagesPrinted(20);
-        myPrinter.setPagesPrinted(20);
-        System.out.println(myPrinter.getTonerLevel());
-        System.out.println(myPrinter.getPagesPrinted());
+        Jeep rubicon = new Jeep("Rubicon", 200);
+        Porsche xModel = new Porsche("X Model", 400);
+        Bentley mulsanne = new Bentley("Mulsanne", 200);
+
+        rubicon.startEngine();
+        xModel.startEngine();
+        mulsanne.startEngine();
+
+//        System.out.println(myPrinter.getTonerLevel());
+//        myPrinter.setPagesPrinted(20);
+//        myPrinter.setPagesPrinted(20);
+//        System.out.println(myPrinter.getTonerLevel());
+//        System.out.println(myPrinter.getPagesPrinted());
 
 //        System.out.println(ihsan.getShirts().getBrands());
     }
