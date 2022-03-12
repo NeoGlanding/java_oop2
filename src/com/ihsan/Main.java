@@ -9,7 +9,15 @@ public class Main {
 
         Room mainRoom = new Room(new Sofa("International", "Kubics", "ASUS"), "blue");
 
-        System.out.println(mainRoom.getSofaManufacturer());
+//        System.out.println(mainRoom.getSofaManufacturer());
+
+        Printer myPrinter = new Printer(100, "My Printer");
+
+        System.out.println(myPrinter.getTonerLevel());
+        myPrinter.setPagesPrinted(20);
+        myPrinter.setPagesPrinted(20);
+        System.out.println(myPrinter.getTonerLevel());
+        System.out.println(myPrinter.getPagesPrinted());
 
 //        System.out.println(ihsan.getShirts().getBrands());
     }
